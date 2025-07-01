@@ -1,0 +1,46 @@
+Web technologies: The technology used to design and develop the web page.
+    1.html->hypertext markup language - strucure of web pages
+    2.css->cascading style sheet - design/style of web pages
+    3.js-> javascript - logic/functionality of web pages
+
+HTML: hypertext markup language
+    :used to provide strucure/layout to the web pages
+    :introduced by Tim berners-lee
+    :Html files is saved with .html extension
+
+
+Tags: tags are used to define the strucure of the web pages
+    : tags are of two types
+        1.paired tags/container tags
+        2.unpaired tags/non container tags/self closing tags
+
+paired tags: it consists of opening tag and closing tags
+            <tagName>content</tagName>
+    ex: div, p, i, small, heading tags, etc
+
+unpaired tags:it consists of opening tag only
+              <tagName>
+      ex: img, br, hr, etc 
+
+element:element is a combination of opening tag, closing tag and content
+        <tagName>content</tagName>
+
+comment tags:it is used to add comments in the web pages
+            :the content of the comment tags will not be displayed in the web pages
+            <!---comment content--->
+
+attributes:it is used to add additional information to the tags
+          :used inside the opening tag
+          :the content of the attributes will not be displayed in the web pages
+        ex: src, href, alt, title, style, etc
+
+block level elements:the content of the inline elements will be displayed in the same line
+                    :it does not occupy the full width of the page
+                    :it occuppies required space
+      ex: span, a, img, input, button, etc
+
+List: the content of the list will be displayed in a new line
+    1.ordered list
+    2.unordered list
+    3.data definition list/description list
+    4.nested list

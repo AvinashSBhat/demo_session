@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adjacent sibling</title>
+  <style>
+    div+p{
+      background-color: lightgreen;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    This is a div tag
+    <p>This is a paragraph tag inside div</p>
+  </div>
+  <!-- <span>This is a span tag</span> it won't select -->
+  <p>This is a paragraph tag along with div</p>
+  <p>This is a paragraph tag along with div</p>
+</body>
+</html>
