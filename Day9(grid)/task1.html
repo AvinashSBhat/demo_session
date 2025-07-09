@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid Components Task1</title>
+  <style>
+    .grid-container {
+      display: grid;
+      width: 100%;
+      border: 1px solid black;
+      min-height: 600px;
+      gap: 20px;
+      grid-template-areas: "navbar navbar navbar navbar navbar"
+                           "section1 section1 section1 aside aside"
+                           "section2 section2 section2 aside aside"
+                           "footer footer footer footer footer"; 
+    }
+    nav,aside, section, footer {
+      border: 1px solid black;
+      text-align: center;
+      font-size: 40px;
+      padding: 40px;
+      /* margin: 10px; */
+    }
+    nav{
+      background-color: lightblue;
+      grid-area: navbar;
+    }
+    footer {
+      background-color: lightgreen;
+      grid-area: footer;
+    }
+    .section1 {
+      background-color: lightcoral;
+      grid-area: section1;
+    }
+    .section2 {
+      background-color: lightcyan;
+      grid-area: section2;
+    }
+    aside {
+      background-color: lightgoldenrodyellow;
+      grid-area: aside;
+    }
+  </style>
+</head>
+<body>
+  <div class="grid-container">
+    <nav>Navbar</nav>
+    <section class="section1">Section 1</section>
+    <section class="section2">Section 2</section>
+    <aside>Aside</aside>
+    <footer>Footer</footer>
+  </div>
+</body>
+</html>

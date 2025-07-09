@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    td{
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div style="background-color: rgb(54, 90, 207); color: white; width: 40%; margin-left: 400px;">
+    <h1 style="background-color: grey; color: white;">Blue Developer Directory</h1>
+    <h2>Contact Us</h2>
+    <p>Please use this form to contact a member of our website team</p>
+    <table>
+      <form action="">
+      <tr>
+        <td><label for="name">Full name:</label></td>
+        <td><input type="text" id="name" name="name"></td>
+      </tr>
+      <tr>
+        <td><label for="email">Email Address:</label></td>
+        <td><input type="email" id="email" name="email"></td>
+      </tr>
+      <tr>
+        <td><label for="phone">Phone Number:</label></td>
+        <td><input type="tel" id="phone" name="phone" pattern="[0-9]{10}"></td>
+      </tr>
+      <tr>
+        <td>
+          <label for="best-time">Best Time To Call</label>
+        </td>
+        <td>
+          <input type="radio" id="best-time" name="best-time" value="morning"> Morning
+          <input type="radio" id="best-time" name="best-time" value="afternoon"> Afternoon
+          <input type="radio" id="best-time" name="best-time" value="evening"> Evening
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="budget">Budget:</label></td>
+        <td>
+          <select name="" id="budget">
+            <option value="">--Select One--</option>
+            <option value="Two thousand">Two thousand</option> 
+            <option value="Five thousand">Five thousand</option>
+            <option value="Ten thousand">Ten thousand</option>
+            <option value="Twenty thousand">Twenty thousand</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td><label for="services">Services Needed:</label></td>
+      </tr>
+      <tr>
+        <td style="padding: 0;">
+          <label for="services">(Check all that apply)</label>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input type="checkbox" name="servicesneeded" id="services" value="html">html
+          <input type="checkbox" name="servicesneeded" id="services" value="PHP">PHP
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input type="checkbox" name="servicesneeded" id="services" value="ASP">ASP
+          <input type="checkbox" name="servicesneeded" id="services" value="Java">Java
+        </td>
+      </tr>
+      <tr> 
+        <td>
+          <input type="checkbox" name="servicesneeded" id="services" value="C++">C++
+          <input type="checkbox" name="servicesneeded" id="services" value="Design">Design
+        </td>
+      </tr>
+      </form>
+    </table>
+    <br>
+    <input type="submit" value="Submit Form">
+  </div>
+</body>
+</html>

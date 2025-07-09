@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    h1{
+      margin: 0 0 20px;
+      background-color: purple;
+      color: white;
+      padding: 30px;
+      font-size: 30px;
+    }
+    .container {
+      /* border: 1px solid black; */
+      /* min-height: 100px; */
+      text-align: center;
+      padding: 20px;
+      background-color: white;
+      font-size:30px;
+      
+      /* display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center; */
+    }
+    .content {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 1px;
+      /* background-color: cyan; */
+      /* width: 500px;
+      height: 30px;
+      text-align: center; */
+    }
+    .box{
+      background-color: rgb(0, 245, 245);
+      color: black;
+      padding: 20px;
+      width: 30%;
+      box-sizing: border-box;
+    }
+    .button-row{
+      display:flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+    .button-row button, .button-blush button{
+      background-color: white;
+      border: none;
+      padding: 10px;
+      width: 22%;
+      height: 40px;
+      cursor: pointer;
+    }
+    .button-blush{
+      margin-bottom: 10px;
+    }
+    .button-blush button{
+      width: 100%;
+    }
+    h2,p{
+      margin-bottom: 10px;
+      font-size: 24px;
+      text-align: left;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Complex flexbox example</h1>
+    <div class="content">
+      <div class="box">
+        <h2>First article</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim cumque quas commodi consectetur at ut quidem obcaecati ipsum excepturi. Animi, eius! Omnis facilis, iusto explicabo numquam delectus esse error quam voluptate doloremque corporis necessitatibus perspiciatis corrupti nulla officia! Repellat debitis adipisci unde nihil minus eaque eum magnam numquam nemo tenetur!</p>
+      </div>
+    <div class="box">
+      <h2>Second article</h2>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque atque dolore, quas, sint eaque repudiandae tempora nam temporibus blanditiis cum quia illo facilis deserunt quod accusantium ea obcaecati velit maxime impedit hic quam iure enim! Iusto perspiciatis earum, dolor magni corporis deserunt dignissimos possimus, ea pariatur consequuntur cumque tenetur ad.</p>
+    </div>
+    <div class="box">
+      <div class="button-row">
+        <button>Smile</button>
+        <button>Laugh</button>
+        <button>Wink</button>
+        <button>Shrug</button>
+      </div>
+      <div class="button-blush"><button>Blush</button></div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, alias! Eum aut eveniet debitis ea tempora, enim perspiciatis iure quo veniam possimus.p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex eum quis facere autem repellendus molestias, cum, impedit illum, nulla eius earum odio.</p>
+    </div>
+  </div>
+</body>
+</html>

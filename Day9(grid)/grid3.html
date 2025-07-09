@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container{
+      display: grid;
+      grid-template-columns: repeat(5, 50px);
+      grid-template-rows: repeat(4, 50px);
+      gap: 10px;
+      text-align: center;
+    }
+    .item{
+      border: 1px solid black;
+      padding: 13px;
+    }
+    .one{
+      grid-column: 1/6;
+      background-color: lightblue ;
+    }
+    .two{
+      grid-column: 1/4; 
+      background-color:aqua;
+    }
+    .three{
+      grid-column: 4/6;
+      grid-row: 2/4;
+      padding-top: 40px;
+      background-color:rgb(94, 94, 197);
+    }
+    .four{
+      grid-column: 1/4 ;
+      background-color: lightpink;
+    }
+    .five{
+      grid-column: 1/6;
+      background-color: rgb(192, 108, 108);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="item one">navbar</div>
+    <div class="item two">section1</div>
+    <div class="item three">aside</div>
+    <div class="item four">section2</div>
+    <div class="item five">footer</div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form 2 task</title>
+  <style>
+    form{
+      border: 2px solid black;
+      height: 800px;
+    }
+  </style>
+</head>
+<body>
+  <form action="https://httpbin.org/get" method="get">
+    <fieldset>
+      <legend>Basic Information</legend>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="userName" placeholder="Enter your name"><br><br>
+      <label for="fname">Father's Name:</label>
+      <input type="text" id="fname" name="fatherName" placeholder="Enter your father's name"><br><br>
+      <label for="mname">Mother's Name:</label>
+      <input type="text" id="mname" name="motherName" placeholder="Enter your mother's name"><br><br>
+      <label for="age">Age</label>
+      <input type="number" id="age" name="userAge" placeholder="Enter your age" min="10" max="45" step="5"><br><br>
+      <label for="gender">Gender:</label>
+      <input type="radio" id="gender" name="userGender" value="male" >Male
+      <input type="radio" id="gender" name="userGender" value="female" >Female
+      <input type="radio" id="gender" name="userGender" value="other">Other
+      <br><br>
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="userDOB"><br><br>
+      <label for="profile">Proile picture</label>
+      <input type="file" id="profile" name="userProfile" accept="image/*"><br><br> 
+    </fieldset><br><br>
+    <fieldset>
+      <legend>Contact Information</legend>
+      <label for="phone">Phone number:</label>
+      <input type="tel" id="phone" name="userPhone" placeholder="Enter your phone number" pattern="[0-9]{10}" required><br><br>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="userEmail" placeholder="Enter your email"><br><br>
+      <label for="address">Address:</label>
+      <textarea id="address" name="userAddress" placeholder="Enter your address" rows="4" cols="50"></textarea><br><br>
+    </fieldset>
+    <fieldset>
+      <legend>Choices : </legend>
+      <label for="lang">Favorite Language:</label>
+      <input type="checkbox" name="programminglang" id="lang" value="Java" checked>Java
+      <input type="checkbox" name="programminglang" id="lang" value="Python">Python
+      <input type="checkbox" name="programminglang" id="lang" value="JavaScript">JavaScript
+      <input type="checkbox" name="programminglang" id="lang" value="C++" disabled>C++ <br><br>
+      <label for="sports">Sports:</label>
+      <select name="sports" id="sports" multiple size="2">
+        <option value="">---select---</option>
+        <option value="cricket">Cricket</option>
+        <option value="football" selected>Football</option>
+        <option value="basketball">Basketball</option>
+        <option value="hockey">Hockey</option>
+      </select><br><br>
+      <label for="food">Favorite food:</label>
+      <select name="food" id="food">
+        <option value="">---select---</option>
+        <optgroup label="Veg">
+          <option value="paneer_tikka">Paneer Tikka</option>
+          <option value="dal_makhani">Dal Makhani</option>
+          <option value="chana_masala">Chana Masala</option>
+        </optgroup>
+        <optgroup label="Non-Veg" disabled>
+          <option value="chicken_curry">Chicken Curry</option>
+          <option value="mutton_biryani">Mutton Biryani</option>
+          <option value="fish_fry">Fish Fry</option>
+        </optgroup>
+      </select><br><br>
+      <label for="color">Favorite color:</label>
+      <input type="color" id="color" name="userColor"> <br><br>
+      <label for="range">Range:</label>
+      <input type="range" id="range" name="userRange" min="0" max="100" step="5"><br><br>
+    </fieldset><br><br>
+    <label for="pet">Favorite pet:</label>
+    <input list="pets" id="pet" name="userPet">
+    <datalist id="pets">
+      <option value="Dog">
+      <option value="Cat">
+      <option value="Rabbit">
+      <option value="Hamster">
+      <option value="Parrot">
+      <option value="Fish">
+    </datalist><br><br>
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+  </form>
+</body>
+</html>

@@ -20,3 +20,22 @@ attributes of table tags:
 5.bgcolor - used to provide background color
 6.style - used to provide styling
 
+pseudo classes: 
+      - pseudo classes are used to apply styles to elements based on their state or behavior
+      - indicated with : and followed by the name of the pseudo class
+      ex: :hover, :active, :visited, :link, etc
+
+link states:
+unvisited - blue : link attribute is used to style the link when it is not visited
+active - red : active attribute is used to style the link when it is active
+visited - purple : visited attribute is used to style the link when it is visited
+
+pseudo elements:
+      - it is used to apply styles to specific parts of an element
+      - indicated with :: and followed by the name of the pseudo element 
+      ex: ::before, ::after, ::first-line, ::first-letter, etc.
+
+Note: Pseudo elements are not supported for inline elements(span)
+
+
+

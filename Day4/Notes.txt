@@ -21,3 +21,4 @@ git remote add origin paste your github link here
 git push origin master
 or
 git push origin main
+git checkout branch_name
